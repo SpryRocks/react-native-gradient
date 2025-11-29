@@ -1,6 +1,7 @@
 package com.gradient
 
 import android.graphics.Color
+import com.facebook.react.bridge.ReadableMap
 import com.facebook.react.module.annotations.ReactModule
 import com.facebook.react.uimanager.SimpleViewManager
 import com.facebook.react.uimanager.ThemedReactContext
@@ -32,7 +33,11 @@ class GradientViewManager : SimpleViewManager<GradientView>(),
 
   @ReactProp(name = "color")
   override fun setColor(view: GradientView?, color: String?) {
-    view?.setBackgroundColor(Color.parseColor(color))
+//    view?.setBackgroundColor(Color.parseColor(color))
+  }
+
+  override fun setBorderColor(view: GradientView?, value: Int?) {
+    view?.borderColor = value
   }
 
   companion object {

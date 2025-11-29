@@ -1,6 +1,6 @@
 {
   "name": "@spryrocks/react-native-gradient",
-  "version": "0.1.1-alpha.0",
+  "version": "0.1.1-alpha.2",
   "description": "React native Linear and Radial gradient",
   "main": "./lib/module/index.js",
   "types": "./lib/typescript/src/index.d.ts",

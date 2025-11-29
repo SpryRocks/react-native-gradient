@@ -1,7 +1,6 @@
-import { codegenNativeComponent, type ViewProps } from 'react-native';
+import {codegenNativeComponent} from 'react-native';
 
-interface NativeProps extends ViewProps {
-  color?: string;
+interface NativeProps {
 }
 
 export default codegenNativeComponent<NativeProps>('GradientView');
